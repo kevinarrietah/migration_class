@@ -1,0 +1,24 @@
+<h1>Products</h1>
+<table>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>price</th>
+        <th>created_by</th>
+        <th>created_at</th>
+        <th>diponible en</th>
+        
+    </tr>
+    <% @products.each do |product| %>
+    <tr>
+        <td><%= product.id  %></td>
+        <td><%= product.name%></td>
+        <td><%= product.price %></td>
+        <td><%= product.created_by.name%></td>
+        <td><%= product.created_at %></td>
+        <td><%= product.stores.map(&:name).join(', ') %></td>
+       
+    </tr>
+    <% end %>
+</table>
+   
