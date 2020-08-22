@@ -22,9 +22,8 @@ class ProducFinder
         product_scope
         default_scope
     end
+   
     def default_scope
-        @default_scope = 
-        
     end
 
     private

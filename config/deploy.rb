@@ -3,7 +3,7 @@ lock "~> 3.14.1"
 
 set :application, "migration_class"
 set :repo_url, "https://github.com/kevinarrietah/migration_class.git"
-
+set :rails_env, :production
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
@@ -21,7 +21,7 @@ set :repo_url, "https://github.com/kevinarrietah/migration_class.git"
 # set :pty, true
 
 # Default value for :linked_files is []
- append :linked_files, "config/database.yml"
+ append :linked_files, "config/database.yml", "config/master.key"
 
 # Default value for linked_dirs is []
  append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
