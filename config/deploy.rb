@@ -2,7 +2,7 @@
 lock "~> 3.14.1"
 
 set :application, "migration_class"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :repo_url, "https://github.com/kevinarrietah/migration_class.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
